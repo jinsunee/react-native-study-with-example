@@ -1,5 +1,21 @@
+import {
+  MaterialTopTabNavigationProp,
+  createMaterialTopTabNavigator,
+} from '@react-navigation/material-top-tabs';
+
 import React from 'react';
-import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import { RouteProp } from '@react-navigation/native';
+
+export type TopTabParamList = {
+  Default: undefined;
+};
+
+export type defaultTopTabNavigationProp = MaterialTopTabNavigationProp<
+  TopTabParamList,
+  'Default'
+>;
+
+export type defaultTopTabRouteProp = RouteProp<TopTabParamList, 'Default'>;
 
 const Tab = createMaterialTopTabNavigator();
 

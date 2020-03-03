@@ -5,24 +5,28 @@ import {
 
 import React from 'react';
 import { RouteProp } from '@react-navigation/native';
+import SignIn from '../screen/SignIn';
+import SignUp from '../screen/SignUp';
 
 export type StackParamList = {
-  Default: undefined;
+  SignIn: undefined;
+  SignUp: undefined;
 };
 
 export type defaultStackNavigationProp = StackNavigationProp<
   StackParamList,
-  'Default'
+  'SignIn'
 >;
 
-export type defaultStackRouteProp = RouteProp<StackParamList, 'Default'>;
+export type defaultStackRouteProp = RouteProp<StackParamList, 'SignIn'>;
 
 const Stack = createStackNavigator<StackParamList>();
 
 function StackNavigator() {
   return (
-    <Stack.Navigator>
-      {/* <Stack.Screen name="Home" component={HomeScreen} /> */}
+    <Stack.Navigator initialRouteName="SignIn">
+      <Stack.Screen name="SignIn" component={SignIn} />
+      <Stack.Screen name="SignUp" component={SignUp} />
     </Stack.Navigator>
   );
 }

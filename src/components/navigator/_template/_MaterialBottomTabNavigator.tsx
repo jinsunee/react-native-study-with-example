@@ -1,5 +1,24 @@
+import {
+  MaterialBottomTabNavigationProp,
+  createMaterialBottomTabNavigator,
+} from '@react-navigation/material-bottom-tabs';
+
 import React from 'react';
-import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
+import { RouteProp } from '@react-navigation/native';
+
+export type BottomTabParamList = {
+  Default: undefined;
+};
+
+export type defaultBottomTabNavigationProp = MaterialBottomTabNavigationProp<
+  BottomTabParamList,
+  'Default'
+>;
+
+export type defaultBottomTabRouteProp = RouteProp<
+  BottomTabParamList,
+  'Default'
+>;
 
 const Tab = createMaterialBottomTabNavigator();
 
