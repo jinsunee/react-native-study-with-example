@@ -5,6 +5,7 @@
  - react-native
  - react-native-cli
  - typescript
+ - styled-components
 
 ## License
 

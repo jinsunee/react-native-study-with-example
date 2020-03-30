@@ -17,7 +17,7 @@ const StyledText = styled.Text`
 function Screen(): ReactElement {
   return (
     <Container>
-      <StyledText>Sign In!</StyledText>
+      <StyledText>Home</StyledText>
     </Container>
   );
 }

@@ -4,6 +4,7 @@ import {
 } from '@react-navigation/stack';
 
 import AuthStack from './AuthStackNavigator';
+import HomeBottom from './HomeBottomTabNavigator';
 import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import { RouteProp } from '@react-navigation/native';
@@ -29,7 +30,7 @@ function RootStackNavigator() {
           headerShown: false,
         }}
       >
-        <Stack.Screen name="AuthStack" component={AuthStack} />
+        <Stack.Screen name="AuthStack" component={HomeBottom}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
