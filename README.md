@@ -14,9 +14,10 @@ React-Native 패키지에 있는 컴포넌트를 사용해서 여러가지 만�
 ### 1) FilterModal
 
 react-native의 컴포넌트인 `Animated`와 `Modal` 이용
+
 ![FilterModal](https://user-images.githubusercontent.com/31176502/81084854-66dab480-8f31-11ea-9e7c-52c5fcf05226.gif)
 
-`shared/FilterModal.tsx`
+[shared/FilterModal.tsx](https://github.com/jinsunee/react-native-study-with-example/blob/master/src/components/shared/FilterModal.tsx)
 
 1. 모달의 처음 위치 -> 화면 윗쪽에 숨어있게 -screenHeight로 위치 지정
 
@@ -65,7 +66,7 @@ const overlayOpacity = modalPositionY.interpolate({
 | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | ![image1](https://user-images.githubusercontent.com/31176502/81086077-ffbdff80-8f32-11ea-8285-b11c7c3fa0d8.png) | ![image2](https://user-images.githubusercontent.com/31176502/81087941-4ad91200-8f35-11ea-92c2-a1536fc1f02d.png) |
 
-`shared/ProductPhotoCard`
+[shared/ProductPhotoCard.tsx](https://github.com/jinsunee/react-native-study-with-example/blob/master/src/components/shared/ProductPhotoCard.tsx)
 
 1. 기본 카드 or 선택 가능한 카드인지
 
@@ -117,14 +118,16 @@ const hasIcon = (
 
 ### 3) CustomImage
 
-react-native의 Image + loading 추가
+react-native의 Image + loading 중 컴포넌트
+[shared/CustomImage.tsx](https://github.com/jinsunee/react-native-study-with-example/blob/master/src/components/shared/CustomImage.tsx)
+
 ![CustomImage](https://user-images.githubusercontent.com/31176502/81085941-d56c4200-8f32-11ea-9747-6a922ca30996.gif)
 
 ### 3-1) CacheImage
 
-- CustomImage + FileSystem 을 이용한 이미지 캐싱(성능 개선)
+CustomImage + FileSystem 을 이용한 이미지 캐싱(성능 개선)
 
-`shared/CacheImage.tsx`
+[shared/CacheImage.tsx](https://github.com/jinsunee/react-native-study-with-example/blob/master/src/components/shared/CacheImage.tsx)
 
 ```
   const cacheImage = async (): Promise<void> => {
@@ -153,7 +156,7 @@ useEffect(() => {
 진행상황을 원형으로 표현한 컴포넌트로, javascript 코드로 svg 파일에 넣을 수 있도록 직접 수정하는 방식으로 구현
 ![image](https://user-images.githubusercontent.com/31176502/81089643-9096da00-8f37-11ea-93d1-ab8ea461cd57.png)
 
-`shared/CircleProgress.tsx`
+[shared/CircleProgress.tsx](https://github.com/jinsunee/react-native-study-with-example/blob/master/src/components/shared/CircularProgress.tsx)
 
 1.`react-native-svg` 사용
 
