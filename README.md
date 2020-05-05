@@ -119,6 +119,7 @@ const hasIcon = (
 ### 3) CustomImage
 
 react-native의 Image + loading 중 컴포넌트
+
 [shared/CustomImage.tsx](https://github.com/jinsunee/react-native-study-with-example/blob/master/src/components/shared/CustomImage.tsx)
 
 ![CustomImage](https://user-images.githubusercontent.com/31176502/81085941-d56c4200-8f32-11ea-9747-6a922ca30996.gif)
@@ -182,9 +183,9 @@ export enum StartDirectionType {
 progressStartDirection = StartDirectionType.top
 ```
 
-3. 원 테두리 두꼐, 반지름 등의 값을 구하는 부분
+3. 반지름 등 그릴 원에 필요한 값을 구하기
 
-- customizing 가능하도록 props로 받은 값을 바탕으로 구성
+customizing 가능하도록 props로 받은 값을 바탕으로 구성
 
 ```
 const AnimatedCircle = Animated.createAnimatedComponent(Circle);
